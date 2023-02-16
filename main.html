@@ -7,42 +7,42 @@
 </head>
 
 <body>
-	 <form method="post" action="#"> 
-		 <div>
-			 <label for="name">Name</label>
-			 <input type="text" id="#name">  
-		 </div>
-		 <div>
-			 <label for ="email">Email*</label> 
-			 <input type="email" id="#email" required>
-		 </div>
-		 <div>
-			 <label for="gender">Gender*</label>
-			 <input type="radio" name="gender" value="male" required>Male
-			 <input type="radio" name="gender" value="female" required>female
-		 </div>
-		 <div>
-			 <label for="car brands">Car Brands</label> 
-			 <select id="car brands">
-				 <option value="BMW">BMW</option>
-				 <option value="Audi">Audi</option>
-				 <option value="mercedez">Mercedez</option> 
-			 </select>
-		 </div>
-		 <div>
-			 <label for="carage">Car Age*</label>
-			 <input type ="number" id="#carage" required> 
-		 </div>
-		 <div>
-			 <label for="date of purchase">Date of Purchase(dop)*</label>
-			 <input type="date" id="#dop" required>
-		 </div>
-		 <div>
-			 <label for="Password">Password*</label>
-			 <input type="password" id="#Password" required> 
-		 </div>
-		 <button type="submit">submit</button> 
-	 </form>
+	 <form action="submit_form.php" method="post">
+  <label for="name">Name</label> 
+  <input type="text" id="#name" name="name" required><br><br>
+
+  <label for="email">Email*</label>
+  <input type="email" id="#email" name="email" required><br><br>
+
+  <label for="gender">Gender*</label> 
+  <br>
+  <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label><br><br>
+
+  <label for="car_brand">Car Brand</label>
+  <br>
+  <input type="radio" id="bmw" name="car_brand" value="bmw" required>
+  <label for="bmw">BMW</label><br>
+  <input type="radio" id="audi" name="car_brand" value="audi">
+  <label for="audi">Audi</label><br>
+  <input type="radio" id="mercedes" name="car_brand" value="mercedes">
+  <label for="mercedes">Mercedes</label><br><br>
+
+  <label for="car_age">Car Age*</label>
+  <input type="number" id="#carage" name="car_age" required><br><br>
+
+  <label for="date_of_purchase">Date of Purchase*</label> 
+  <input type="date" id="#dop" name="date_of_purchase" required><br><br>
+
+  <label for="password">Password*</label> 
+  <input type="password" id="#password" name="password" required><br><br>
+
+  <input type="submit" value="Submit">
+</form> 
     <script type="text/javascript" src="./script.js">
 </script>
 
